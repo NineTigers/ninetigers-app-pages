@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="오늘의 마음과 작은 자기 돌봄을 기록하는 웰니스 앱, 마음자로" />
+    <meta name="description" content="식사·물·움직임·수면과 몸·마음을 기록하고 마로와 생활 흐름을 돌아보는 자기관리 앱, 마음자로" />
     <title>마음자로</title>
     <style>
       :root {
         color-scheme: light;
         --cream: #f8f1e6;
         --paper: #fffaf3;
-        --ink: #332822;
+        --ink: #243f37;
         --muted: #756b62;
         --line: #ded2c2;
         --coral: #ef8b70;
         --coral-dark: #9a4f3d;
-        --sage: #bcc3a2;
-        --cocoa: #5a4237;
+        --sage: #cfe0d8;
+        --green: #456f61;
       }
       * { box-sizing: border-box; }
       body {
@@ -31,42 +31,43 @@
       .eyebrow { margin: 0 0 16px; color: var(--coral-dark); font-size: .78rem; font-weight: 800; letter-spacing: .13em; }
       h1, h2 { font-family: Georgia, "Noto Serif KR", serif; letter-spacing: -.045em; line-height: 1.18; }
       h1 { margin: 0; font-size: clamp(3rem, 9vw, 5.8rem); }
-      .lead { max-width: 650px; margin: 24px 0 0; color: var(--muted); font-size: clamp(1.05rem, 2.5vw, 1.3rem); }
+      .lead { max-width: 690px; margin: 24px 0 0; color: var(--muted); font-size: clamp(1.05rem, 2.5vw, 1.3rem); }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
-      .links a { padding: 13px 20px; border: 1px solid var(--cocoa); border-radius: 999px; color: var(--cocoa); font-weight: 750; text-decoration: none; }
-      .links a:first-child { background: var(--cocoa); color: var(--paper); }
+      .links a { padding: 13px 20px; border: 1px solid var(--green); border-radius: 999px; color: var(--green); font-weight: 750; text-decoration: none; }
+      .links a:first-child { background: var(--green); color: var(--paper); }
       .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 76px; }
-      .card { min-height: 220px; padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
-      .card:nth-child(1) { background: #f2a38d; }
+      .card { min-height: 230px; padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: var(--paper); }
+      .card:nth-child(1) { background: #f3b09e; }
       .card:nth-child(2) { background: var(--sage); }
       .card h2 { margin: 52px 0 10px; font-size: 1.45rem; }
-      .card p { margin: 0; color: rgba(51, 40, 34, .76); }
-      .notice { margin-top: 24px; padding: 30px; border-radius: 18px; background: var(--cocoa); color: var(--paper); }
+      .card p { margin: 0; color: rgba(36, 63, 55, .76); }
+      .notice { margin-top: 24px; padding: 30px; border-radius: 18px; background: var(--green); color: var(--paper); }
       .notice h2 { margin: 0 0 10px; }
-      .notice p { margin: 0; color: rgba(255, 250, 243, .78); }
+      .notice p { margin: 0; color: rgba(255, 250, 243, .84); }
       footer { margin-top: 44px; color: var(--muted); font-size: .9rem; }
+      footer a { color: var(--green); }
       @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } .card { min-height: auto; } .card h2 { margin-top: 20px; } }
     </style>
   </head>
   <body>
     <main>
       <p class="eyebrow">마음자로 · MAUMJARO</p>
-      <h1>오늘의 나를<br />다정하게 돌보는 기록</h1>
-      <p class="lead">다이어트가 나를 미워하는 일이 되지 않도록. 몸의 숫자보다 오늘의 마음과 작은 자기 돌봄을 기록하는 웰니스 앱입니다.</p>
+      <h1>오늘을 기록하고<br />내 생활을 돌아봐요</h1>
+      <p class="lead">다이어터를 위한 자기관리 앱이에요. 식사·물·움직임·수면과 몸·마음을 기록하고, 마로와 함께 하루·7일·한 달의 생활 흐름을 살펴보세요.</p>
       <nav class="links" aria-label="지원 및 정책">
         <a href="./support.html">도움말 및 고객지원</a>
         <a href="./privacy.html">개인정보처리방침</a>
       </nav>
 
       <section class="grid" aria-label="주요 기능">
-        <article class="card"><span>01</span><h2>마음 살피기</h2><p>오늘의 마음 상태를 가볍게 남겨요.</p></article>
-        <article class="card"><span>02</span><h2>생활 돌봄</h2><p>물 한 잔과 3분 스트레칭 같은 작은 돌봄을 실천해요.</p></article>
-        <article class="card"><span>03</span><h2>마로와 다정함</h2><p>돌봄을 이어가며 마로와의 다정함을 쌓아요.</p></article>
+        <article class="card"><span>01</span><h2>간편한 생활 기록</h2><p>기억하고 싶은 만큼 기록하고, 홈과 기록에서 수정하거나 삭제할 수 있어요.</p></article>
+        <article class="card"><span>02</span><h2>목표와 생활 흐름</h2><p>목표 현황과 일간·주간·월간 통계로 생활의 변화를 확인해요.</p></article>
+        <article class="card"><span>03</span><h2>마로와 돌아보기</h2><p>7일·한 달의 기록을 장면과 응원 카드로 다시 만나보세요.</p></article>
       </section>
 
       <section class="notice">
-        <h2>마음자로는 의료 서비스가 아닙니다.</h2>
-        <p>일상적인 자기 돌봄을 돕는 웰니스 앱이며 의학적 진단, 치료 또는 복약 지시를 제공하지 않습니다.</p>
+        <h2>기록은 이 기기에만 저장해요.</h2>
+        <p>계정이나 광고 없이 기기에 암호화해 저장합니다. 마음자로는 의료 서비스가 아니며 의학적 진단, 치료 또는 복약 지시를 제공하지 않습니다.</p>
       </section>
       <footer>© 2026 Yin-goo Yim · <a href="mailto:ygyim.biz@gmail.com">ygyim.biz@gmail.com</a></footer>
     </main>
